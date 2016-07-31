@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+.row {
+  width: $full;
+}
+.col-1 {
+  width: $col * 1;
+}
+.col-2 {
+  width: $col * 2;
+}

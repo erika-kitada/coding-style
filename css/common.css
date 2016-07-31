@@ -1,0 +1,91 @@
+/* color palette */
+/* value */
+/* path */
+/* line 1, ../sass/base/_reset.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* line 6, ../sass/base/_reset.scss */
+html {
+  background-color: #ffffff;
+  color: #D3D3D3;
+  font-size: 62.5%;
+}
+
+/* line 11, ../sass/base/_reset.scss */
+body {
+  font-size: 1.0rem;
+  line-height: 1.0;
+}
+
+/* line 15, ../sass/base/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 19, ../sass/base/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 22, ../sass/base/_reset.scss */
+dd {
+  margin-left: 0;
+}
+
+/* line 25, ../sass/base/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 29, ../sass/base/_reset.scss */
+input, select {
+  vertical-align: middle;
+}
+
+/* line 32, ../sass/base/_reset.scss */
+img {
+  vertical-align: bottom;
+  border: 0;
+}
+
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+/* line 3, ../sass/layout/_layout.scss */
+.row {
+  width: 960px;
+}
+
+/* line 6, ../sass/layout/_layout.scss */
+.col-1 {
+  width: 80px;
+}
+
+/* line 9, ../sass/layout/_layout.scss */
+.col-2 {
+  width: 160px;
+}
+
+/* line 1, ../sass/module/component/_button.scss */
+.button {
+  border: 1px solid #D3D3D3;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  color: #D3D3D3;
+  padding: 5px 10px;
+}
+
+/* line 1, ../sass/module/component/_table.scss */
+.table--bordered {
+  border: 1px solid #D3D3D3;
+}
+/* line 3, ../sass/module/component/_table.scss */
+.table--bordered th, .table--bordered td {
+  border: 1px solid #D3D3D3;
+}

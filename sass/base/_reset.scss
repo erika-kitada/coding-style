@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  background-color: #ffffff;
+  color: $default;
+  font-size: 62.5%; //10px
+}
+body {
+  font-size: 1.0rem;
+  line-height: 1.0;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+ol, ul {
+  list-style: none;
+}
+dd {
+  margin-left: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+input, select {
+    vertical-align:middle;
+}
+img {
+  vertical-align: bottom;
+  border: 0;
+}
