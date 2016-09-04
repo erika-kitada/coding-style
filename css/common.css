@@ -1,4 +1,5 @@
 /* color palette */
+/* animation */
 /* value */
 /* path */
 /* line 1, ../sass/base/_reset.scss */
@@ -10,8 +11,8 @@
 
 /* line 6, ../sass/base/_reset.scss */
 html {
-  background-color: #ffffff;
-  color: #D3D3D3;
+  background-color: #FFFFFF;
+  color: #212121;
   font-size: 62.5%;
 }
 
@@ -72,13 +73,81 @@ img {
   width: 160px;
 }
 
-/* line 1, ../sass/module/component/_button.scss */
+/* line 1, ../sass/module/component/_typography.scss */
+* + h1 {
+  margin-top: calc(0px - (((2.0rem * 1.6) - 2.0rem) / 2));
+}
+
+/* line 4, ../sass/module/component/_typography.scss */
+h1 {
+  font-size: 2.0rem;
+  line-height: 1.6;
+}
+
+/* line 8, ../sass/module/component/_typography.scss */
+h1 + p {
+  margin-top: calc(20px - ((((2.0rem * 1.6) - 2.0rem) / 2) + (((1.5rem * 1.6) - 1.5rem) / 2)));
+}
+
+/* line 11, ../sass/module/component/_typography.scss */
+p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+/* line 3, ../sass/module/component/_button.scss */
+* + .button {
+  margin-top: 10px;
+}
+
+/* line 6, ../sass/module/component/_button.scss */
 .button {
+  display: inline-block;
   border: 1px solid #D3D3D3;
-  border-radius: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+  width: 250px;
+  height: 46px;
+  line-height: 46px;
+  vertical-align: middle;
+  font-size: 1.4rem;
   background-color: #FFFFFF;
+  color: inherit;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+@media screen and (max-width: 480px) {
+  /* line 6, ../sass/module/component/_button.scss */
+  .button {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 481px) {
+  /* line 25, ../sass/module/component/_button.scss */
+  .button:hover {
+    background-color: #e6e6e6;
+  }
+}
+/* line 30, ../sass/module/component/_button.scss */
+.button[disabled] {
+  border: none;
+  box-shadow: none;
+  background-color: #e6e6e6;
   color: #D3D3D3;
-  padding: 5px 10px;
+}
+/* line 36, ../sass/module/component/_button.scss */
+.button.is-active {
+  border: 1px solid #00934E;
+  background-color: #00934E;
+  color: #FFFFFF;
+}
+@media screen and (min-width: 481px) {
+  /* line 40, ../sass/module/component/_button.scss */
+  .button.is-active:hover {
+    background-color: #006033;
+  }
 }
 
 /* line 1, ../sass/module/component/_table.scss */

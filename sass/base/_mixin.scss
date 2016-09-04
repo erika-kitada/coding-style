@@ -1,1 +1,35 @@
-
+@mixin clearfix() {
+  zoom: 1;
+  &:after {
+    clear: both;
+    content: '';
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+  }
+}
+// create circle
+@mixin circle($value) {
+  width: $value;
+  height: $value;
+  border-radius: $value;
+}
+// Truncating single Line Text 行末の三点リーダー
+@mixin text-over-flow($width) {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: $width;
+}
+// media query
+@mixin media-query-sp ($breakpoint: 480px) {
+  @media screen and (max-width: $breakpoint) {
+    @content;
+  }
+}
+@mixin media-query-pc ($breakpoint: 481px) {
+  @media screen and (min-width: $breakpoint) {
+    @content;
+  }
+}

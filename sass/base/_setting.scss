@@ -1,15 +1,24 @@
 /* color palette */
-$default:    #D3D3D3; //LightGray
-$primary:    #6A5ACD; //SlateBlue
-$important:  #D87093; //PaleVioletRed
-$success:    #9ACD32; //YellowGreen
-$warning:    #FF6347; //tomato
+$white:          #FFFFFF; //white
+$darken-white:   darken($white, 10%);
+$grey:           #D3D3D3; //LightGray
+$black:          #212121; //Lamp Black;
+$primary:        #00934E; //Verde Benettonte
+$darken-primary: darken($primary, 10%);
+$important:      #D87093; //PaleVioletRed
+$success:        #9ACD32; //YellowGreen
+$warning:        #FF6347; //tomato
+$box-shadow:     0 2px 5px 0 rgba(0, 0, 0, .1);
 
+/* animation */
+$animation:      all 0.3s ease 0s;
 
 /* value */
-$full:         960px;
-$grid:         12;
-$col:          $full / $grid;
+$full:           960px;
+$grid:           12;
+$col:            $full / $grid;
+
+$medium:         1.4rem;
 
 /* path */
 $IMG_PATH: '../img/'; //インターポレーション使う

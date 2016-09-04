@@ -1,7 +1,46 @@
+$button-width: 250px;
+$button-height: 46px;
+* + .button {
+  margin-top: 10px;
+}
 .button {
-  border: 1px solid $default;
-  border-radius: 10px;
-  background-color: #FFFFFF;
-  color: $default;
-  padding: 5px 10px;
+  display: inline-block;
+  border: 1px solid $grey;
+  border-radius: 4px;
+  box-shadow: $box-shadow;
+  width: $button-width;
+  @include media-query-sp {
+    width: 100%;
+  }
+  height: $button-height;
+  line-height: $button-height;
+  vertical-align: middle;
+  font-size: $medium;
+  background-color: $white;
+  color: inherit;
+  text-decoration: none;
+  text-align: center;
+  transition: $animation;
+  cursor: pointer;
+  &:hover {
+    @include media-query-pc {
+      background-color: $darken-white;
+    }
+  }
+  &[disabled] {
+    border: none;
+    box-shadow: none;
+    background-color: $darken-white;
+    color: $grey;
+  }
+  &.is-active {
+    border: 1px solid $primary;
+    background-color: $primary;
+    color: $white;
+    &:hover {
+      @include media-query-pc {
+        background-color: $darken-primary;
+      }
+    }
+  }
 }
